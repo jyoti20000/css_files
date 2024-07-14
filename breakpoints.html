@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breakpoints</title>
+
+    <style>
+        .container {
+    width: 100%; /* Set container width to 100% */
+    max-width: 1200px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  img {
+    width: 100%; /* Set image width to 100% of its container */
+  }
+  
+  video {
+    width: 100%; /* Set video width to 100% of its container */
+    max-height: 500px; /* Set maximum height for the video */
+  }
+  
+  /* Media queries for different devices */
+  @media screen and (max-width: 767px) {
+    /* Styles for small devices (e.g., smartphones) */
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    video {
+      max-height: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for medium devices (e.g., tablets) */
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    video {
+      max-height: 400px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* Styles for large devices (e.g., desktops) */
+    h1 {
+      font-size: 36px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  
+    video {
+      max-height: 500px;
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p>This is a responsive design example.</p>
+        <img src="https://images.unsplash.com/photo-1627625598893-5cb20952f6fc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Responsive Image">
+        <video src=".assets/v.mp4" controls></video>
+        <!-- <img src=".//assets/img.jpg"> -->
+      </div>
+</body>
+</html>

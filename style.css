@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: aqua; */
+    background-image:url("https://images.unsplash.com/photo-1563827743410-14888b79810e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhY2slMjBncm91bmR8ZW58MHx8MHx8fDA%3D"), url("https://images.unsplash.com/photo-1634655511368-6cd7213719f4?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    color: white;
+    gap: 10px; 
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.style-link {
+    color:wheat;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 2.3s ease-in-out ;
+}
+
+.style-link:active {
+    color: blue;
+    
+    
+} 
+
+.style-link:visited {
+    color: gray;
+}
+
+.style-link:hover
+{
+    background-color: brown;
+    font-size: 12px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img {
+    width: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+.img1:hover
+{
+    /* background-color: aqua; */
+    /* color: brown; */
+    border-radius: 50px;
+}
+
+h1 {
+    color: red;
+    padding: 20px;
+    text-align: center;
+    
+}
+

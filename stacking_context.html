@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 700px;
+        height: 500px;
+        background-color: peru;
+        position: relative;
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 15px;
+    }
+    .box2{
+        width: 90px;
+        height: 90px;
+        background-color: rgb(38, 120, 51);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 10px;
+    }
+</style>
+<body>
+    <h2>Stacking context is a concept in CSS that determines the order in which elements are stacked and displayed on a web page. 
+        or we can say that which container is display top on the another conatiner..
+        When an element is positioned on a web page, it forms a stacking context, 
+        which is a hierarchical order of its position relative to other elements. 
+        This hierarchy determines which elements will be on top or bottom of other elements when they overlap.
+    </h2>
+
+    <h4>Stacking context is determined by the following rules:</h4>
+    <ul type="square">
+        <li>
+            Each stacking context is self-contained, meaning that the parent of an element in a stacking context does 
+            not affect the stacking order of its child elements.
+        </li>
+        <li>
+            The z-index property can only be applied to elements in the same stacking context. 
+        </li>
+        <li>
+            The order of the elements in the HTML document affects their stacking order, 
+            with later elements stacking on top of earlier elements. 
+        </li>
+    </ul>
+    <p>
+        Elements that create a new stacking context include those with a position value of 
+        absolute, relative, fixed, or sticky, as well as elements with a transform, opacity, 
+        or filter property. These elements will be positioned in front of elements that do not create a new stacking 
+        context, even if they have a lower z-index value.
+    </p>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html

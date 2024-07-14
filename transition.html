@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transform and Transition</title>
+
+    <style>
+        .hover-btn {
+            background-color: aquamarine;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        .hover-btn:hover {
+            background-color: brown;
+            color:black;
+            /* transition: background-color 1.5s ease-in-out, font-size 3s ease-out; */
+            transition: all 3s ease-in-out;
+            /* font-size: 25px ;
+             */
+             /* scale: 1.5; */
+            transform: translateX(50px) translateY(50px) scaleY(1.5) rotateY(145deg);
+            cursor: pointer;
+
+
+        }
+    </style>
+</head>
+<body>
+    <button class="hover-btn">Hover me!</button>
+</body>
+</html>

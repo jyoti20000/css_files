@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+    <style>
+        .inline-block-example 
+        {
+           width : 100px;
+           height: 100px;
+           background-color: red;
+           margin: 5px;
+           display: inline-block;
+        }
+
+        .container_flex {
+            display: flex;
+            flex-direction: column;
+            background-color: blanchedalmond;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .flex-example {
+           width : 100px;
+           height: 100px;
+           background-color: aquamarine;
+           margin: 5px;
+
+        }
+
+        .container_grid {
+          background-color: cadetblue;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          /* (or) grid-template-columns: 300px 300px 300px */
+        }
+
+        .grid-example {
+          background-color: blueviolet;
+          padding: 20px;
+          margin: 40px;
+          font-size: 40px;
+          text-align: center;
+        }
+
+
+    </style>
+    
+  </head>
+  <body>
+    <h1>Example of inline-block <h4>(We can customize its width and height according to our need in inline-block element)</h4></h1>
+    <div class="container">
+      <div class="inline-block-example"></div>
+      <div class="inline-block-example"></div>
+      <div class="inline-block-example"></div>
+    </div>
+
+    <br><br>
+    
+    <h1>Example of flex-box<h4>(Flex-box always target its parent container not the current - box)</h4></h1>
+    <div class="container_flex">
+        
+        <div class="flex-example"></div>
+        <div class="flex-example"></div>
+        <div class="flex-example"></div>
+    </div>
+    <p>display: flex;
+       flex-direction: column;
+       justify-content: center; => in this case box is not
+       align in center its work on only flex-direction: row;
+       if we want to align items in center then we need to use align-items:center with all....
+    </p>
+
+    <br><br>
+
+    <h1>Example of Grid</h1>
+    <div class="container_grid">
+      <div class="grid-example">1</div>
+      <div class="grid-example">2</div>
+      <div class="grid-example">3</div>
+      <div class="grid-example">4</div>
+      <div class="grid-example">5</div>
+      <div class="grid-example">6</div>
+    </div>
+
+  </body>
+</html>

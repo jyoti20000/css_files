@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries & Responsiveness</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* body {
+            background-color: aqua;
+        }
+
+        @media screen and (max-width: 1000px){
+            body {
+                   background-color: blueviolet;
+            }
+        }
+
+        @media screen and (max-width: 500px){
+            body {
+                   background-color: hotpink;
+            }
+        } */
+
+      /* 
+        😍😍Example though Flex😍😍
+        nav ul {
+            background-color: burlywood;
+            color: black;
+            display: flex;
+            list-style-type: none;
+            padding: 10px;
+            justify-content: flex-end;
+            gap: 10px
+        }
+
+        nav ul li a {
+            font-size: 25px;
+            color: gray;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 500px){
+            nav ul {
+                flex-direction: column;
+                background-color: black;
+                align-items: center;
+            }
+        } */
+
+      /* 😍😍Example though Flex😍😍 */
+
+      .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .grid-item {
+        background-color: aqua;
+        padding: 20px;
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .grid-container {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .grid-container {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        .grid-container {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </nav> -->
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </body>
+</html>

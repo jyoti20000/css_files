@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        p {
+            color:blue;
+        }
+
+        p:first-child {
+            color:blue;
+        }
+
+        p::nth-child(4) {
+            color:bisque;
+        }
+
+        p::first-letter {
+            color:darkslategray;
+            font-size: 40px;
+        }
+        
+        .heading_class {
+           color: cadetblue;
+        }
+
+        .heading_class:before {
+            content: '"';
+           color: red;
+           font-size: 40px;
+        }
+
+        .heading_class::after {
+            content: '"';
+           color: red;
+           font-size: 40px;
+        }
+
+        #heading_id {
+            color: chartreuse;
+        }
+
+        input[type="text"]
+        {
+            background-color: aqua;
+        }
+
+        input[type="text"]:hover
+        {
+            background-color:bisque;
+        }
+
+        ol>li::first-letter {
+            color: aquamarine;
+        }
+        #demo {color: blue;}
+        .test {color: green;}
+         p {color: red;}
+      </style>
+    
+</head>
+<body>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <h1 class="heading_class">This is heading</h1>
+    <h2 id="heading_id">This is second heading</h2>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Second Name">
+    <ol type='a'>
+        <li>Apple</li>
+        <li>Bannan</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+    </ol>
+    
+    <p id="demo" class="test" style="color: pink;">Hello World!</p>
+</body>
+</html>
